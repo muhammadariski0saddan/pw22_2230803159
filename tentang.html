@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorium Terpadu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="col-1">
+    <div id="logo">
+      <img src="Labor.PNG" alt="logo"></img>
+    </div>
+
+    <nav id="articlepop">Articel Populer</nav>
+    <ul class="menu-list">
+      <li>Beaker Glass</li>
+      <li>Pipet Volume</li>
+      <li>Labu Ukur</li>
+      <li>Lain - lain</li>
+    </ul>
+
+  </div>
+
+  <div class="col-2">
+    <header class="col-3">
+      <p class="title">Selamat datang </p>
+      <p class="subtitle">Ini adalah halaman utama Laboratorium Terpadu</p>
+    </header>
+    <nav class="navigation-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="tentang.html">TENTANG</a></li>
+        <li><a href="galeri.html">GALERI</a></li>
+        <li><a href="kontak.html">KONTAK</a></li>
+        <li><a href="daftar.html">DAFTAR ISI</a></li>
+        <li><a href="bukutamu.html">BUKU TAMU</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <article class="article">
+        <h2>Tentang Laboratorium</h2>
+        <p>Laboratorium terpadu adalah fasilitas penelitian atau laboratorium yang dirancang untuk memungkinkan berbagai disiplin ilmu bekerja bersama-sama dalam satu tempat yang sama</p>
+        <p>Laboratorium terpadu juga dapat membantu dalam menghemat sumber daya, seperti peralatan dan ruang laboratorium, karena berbagai tim penelitian dapat berbagi sumber daya yang sama. Ini adalah konsep yang penting dalam meningkatkan efisiensi dalam penelitian ilmiah dan pengembangan teknologi.</p>
+        <p>Fasilitas ini seringkali dilengkapi dengan peralatan dan instrumen mutakhir yang dapat digunakan oleh berbagai departemen atau tim penelitian. Keuntungan utama dari laboratorium terpadu adalah memfasilitasi pertukaran ide dan pengetahuan antar ilmuwan dari berbagai latar belakang, yang dapat mengarah pada penemuan dan inovasi yang lebih baik.</p>
+        <p>Konsep laboratorium terpadu bertujuan untuk mempromosikan kolaborasi antara para ilmuwan dan peneliti yang bekerja dalam berbagai bidang ilmu, seperti kimia, biologi, fisika, dan teknik.</p>
+      </article>      
+    </main>
+  </div>
+  <footer>
+    <div class="footertext">
+      <p>&copy; Copyright 2023. All Rights Reserved<br>Fakultas Laboratorium Terpadu
+    </div>
+  </footer>
+  <script>
+    // Fungsi untuk menampilkan footer setelah scroll ke bawah sekali
+    function showFooterOnScroll() {
+      var footer = document.querySelector('footer');
+      var scrollPosition = window.scrollY || window.pageYOffset;
+  
+      if (scrollPosition > 1) { // Ubah nilai 1 sesuai dengan seberapa jauh pengguna harus scroll sebelum footer muncul
+        footer.style.display = 'block';
+      } else {
+        footer.style.display = 'none';
+      }
+    }
+  
+    // Tambahkan event listener untuk memanggil fungsi saat scroll
+    window.addEventListener('scroll', showFooterOnScroll);
+  </script>
+</body>
+</html>
